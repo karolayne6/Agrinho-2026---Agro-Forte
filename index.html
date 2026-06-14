@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Agro Brasil</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+    </head>
+    <body>
+
+        <div class="container">
+
+            <header>
+            <h1>🌱Agronegócio Brasileiro</h1>
+        </header>
+
+            <div class="tabs">
+
+                <button class="tab active"
+                onclick="abrirAba('inicio')">
+                Introdução
+            </button>
+
+            <button class="tab"
+                onclick="abrirAba('tecnologia')">
+                Tecnologia
+            </button>
+
+            <button class="tab"
+                onclick="abrirAba('sustentabilidade')">
+                Sustentabilidade
+            </button>
+
+            <button class="tab"
+                onclick="abrirAba('dados')">
+                Dados
+            </button>
+            
+            <button class="tab"
+                onclick="abrirAba('quiz')">
+                Quiz
+            </button>
+
+             <button class="tab"
+                onclick="abrirAba('fontes')">
+                Fontes
+            </button>
+
+            
+            </div>
+
+            <div id="inicio" class="conteudo ativo">
+
+                <h2>A força do agronegócio</h2>
+
+                <img 
+                src="https://blog.uniube.br/hs-fs/hubfs/imagem_2%20(5).jpg?width=1600&name=imagem_2%20(5).jpg">
+
+                <p>
+                    O agronegócio é um dos setores mais importantes da economia brasileira,
+                    sendo responsável por grande parte da produção de alimentos consumidos 
+                    no país e exportados para o exterior. Sua atuação vai muito além das
+                    fazendas, envolvendo indústrias, centros de pesquisa, transportadoras,
+                    cooperativas e empresas de tecnologia.
+                </p>
+
+                <p>
+                    O Brasil destaca-se internacionalmente pela produção de soja, milho, café,
+                    algodão, cana-de-açúcar e proteínas animais. Graças à diversidade climática
+                    e à vasta extensão territorial, o país tornou-se uma das maiores potências
+                    agrícolas do mundo.
+                </p>
+
+                <p>
+                    Além de contribuir para a segurança alimentar global, o setor gera milhões
+                    de empregos diretos e indiretos, movimentando a economia nacional e impulsionando
+                    o desenvolvimento de diversas regiões.
+                </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Indicador</th>
+                            <th>Valor / Informação</th>
+                            <th>Ano de referência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Participação no PIB brasileiro</td>
+                            <td>~24% do PIB total</td>
+                            <td>2024/2025</td>
+                        </tr>
+
+                        <tr>
+                            <td>Valor da produção</td>
+                            <td>R$1,3 trilhão</td>
+                            <td>2025</td>
+                        </tr>
+
+                        <tr>
+                            <td>Principais produtos de exportação</td>
+                            <td>Soja, carne, açúcar, café, algodão</td>
+                            <td>2024/2025</td>
+                        </tr>
+
+                        <tr>
+                            <td>Participação nas exportações</td>
+                            <td>~45% do total exportado pelo Brasil</td>
+                            <td>2025</td>
+                        </tr>
+
+                        <tr>
+                            <td>Empregos gerados</td>
+                            <td>~27 milhões de vagas(diretas e indiretas)</td>
+                            <td>2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="tecnologia" class="conteudo">
+
+                <h2>🚜Tecnologia e inovação no campo</h2>
+
+                <p>
+                    O avanço tecnológico transformou profundamente a agricultura brasileira.
+                    Atualmente, produtores utilizam drones para monitoramento aéreo, sensores
+                    inteligentes para ánalise do solo e sistemas automatizados de irrigação.
+                </p>
+
+                <p>
+                    A Agricultura 4.0 integra dados climáticos, geográficos e produtivos para 
+                    auxiliar na tomada de decisões estratégicas, reduzindo custos e aumentando 
+                    a eficiência das lavouras.
+                </p>
+
+                <p>
+                    Ferramentas de inteligência artificial também vêm sendo utilizadas para 
+                    prever safras, identificar doenças em plantações e otimizar o uso de 
+                    fertilizantes, promovendo maior produtividade com menor impacto ambiental.
+                </p>
+
+            </div>
+
+            <div id="sustentabilidade" class="conteudo">
+
+                <h2>🌎Sustentabilidade e responsabilidade ambiental</h2>
+
+                <p>
+                    A sustentabilidade tornou-se um dos principais desafios e objetivos do 
+                    agronegócio moderno. Produzir alimentos para uma população crescente
+                    exige equilíbrio entre produtividade e preservação ambiental.
+                </p>
+
+                <p>
+                    Entre as práticas sustentáveis destacam-se o plantio direto, a rotação 
+                    de culturas, o manejo integrado de pragas e a recuperação de áreas 
+                    degradadas.
+                </p>
+
+                <p>
+                    Outra estratégia importante é a Integração Lavoura-Pecuária-Floresta (ILPF),
+                    sistema que combina atividades agrícolas, pecuárias e florestais em uma 
+                    mesma área, promovendo ganhos econômicos e ambientais.
+                </p>
+
+            </div>
+
+            <div id="dados" class="conteudo">
+
+                <h2>📈Indicadores do Agronegócio</h2>
+
+                <p>
+                    O agronegócio representa uma parcela significativa da economia brasileira 
+                    e possui forte influência na balança comercial do país.
+                </p>
+
+                <p>
+                    O gráfico abaixo apresenta a participação aproximada do setor no PIB brasileiro 
+                    ao longo dos últimos anos, evidenciando sua relevância para o crescimento econômico 
+                    nacional.
+                </p>
+
+                <div style="max-width: 800px; margin: 20px auto;
+                padding: 15px; background: #121a2f;
+                border-radius: 8px;">
+                <h2 style="color: #3498db; text-align: center;">Participação no PIB (%)</h2>
+                <canvas id="graficoPib"></canvas>
+                </div>
+
+                <p>
+                    Mesmo diante de desafios climáticos e oscilações do mercado internacional, o setor 
+                    mantém elevados níveis de produtividade graças aos investimentos em pesquisa, 
+                    inovação e infraestrutura.
+                </p>
+
+            </div>
+
+           <div id="fontes" class="conteudo">
+
+                <h2>Referências utilizadas</h2>
+
+                <p>
+                    As informações presentes neste site foram baseadas em dados oficiais e publicações 
+                    de instituições reconhecidas nacionalmente.
+                </p>
+
+                <ul>
+                    <li>Instituto Brasileiro de Geografia e Estatística (IBGE)</li>
+                    <li>Empresa Brasileira de Pesquisa Agropecuária (EMBRAPA)</li>
+                    <li>Confederação da Agricultura e Pecuária do Brasil (CNA)</li>
+                    <li>Centro de Estudos Avançadoes em Economia Aplicada (CEPEA)</li>
+                    <li>Ministério da Agricultura e Pecuária (MAPA)</li>
+                </ul>
+
+            </div>
+
+           <div id="quiz" class="conteudo">
+
+                <h2>🧠Quiz: Conhecendo o Agronegócio</h2>
+                <div id="area-pergunta">
+                    <p class="pergunta" id="texto-pergunta"></p>
+                    <div id="lista-opcoes"></div>
+                </div>
+                <div id="resultado"></div>
+                <button id="botao-reiniciar">Jogar 
+                    Novamente</button>
+                    
+                    
+            </section>
+            
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+        <footer>
+            <p>
+                © 2026 Agro Brasil - Site desenvolvido para fins educacionais.
+            </p>
+        </footer>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+
+        <script>
+            new
+            Chart(document.getElementById('graficoPib'), {
+                type: 'bar',
+                data: {
+                    labels: ['2021', '2022', '2023', '2024', '2025'],
+                    datasets: [{
+                        label: '% do PIB',
+                        data: [26.6, 24.8, 24.1, 23.7, 24.2],
+                        backgroundColor: '#2ecc71'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        </script>
+
+        <script>
+    //Lista de perguntas e respostas
+    const perguntas = [
+        {
+            pergunta:"Qual a participação aproximada do agronegócio no PIB do Brasil em 2025?",
+            opcoes: ["10%", "18%", "24%", "35%"],
+            correta: 2
+        },
+        {
+            pergunta:"Qual é o principal produto de exportação do agronegócio brasileiro?",
+            opcoes: ["Café", "Soja", "Cana-de-açúcar", "Algodão"],
+            correta: 1
+        },
+        {
+            pergunta:"Quantos empregos (diretos e indiretos) o setor gera aproximadamente?",
+            opcoes: ["10 milhões", "18 milhões", "27 milhões", "40 milhões"],
+            correta: 2
+        },
+        {
+            pergunta:"Qual instituição é responsável por cuidar da área da agricultura e pecúaria?",
+            opcoes: ["IBGE", "MAPA", "Banco Central", "INSS"],
+            correta: 1
+        },
+
+    ];
+
+    let perguntaAtual = 0;
+    let pontuaçao = 0;
+    // Elementos da página
+    const textoPergunta =
+    document.getElementById("texto-pergunta");
+    const listaOpcoes = 
+    document.getElementById("lista-opcoes");
+    const resultado = 
+    document.getElementById("resultado");
+    const  botaoReiniciar =
+    document.getElementById("botao-reiniciar");
+    //Carrega a pergunta atual 
+    function carregarPergunta() {
+        resultado.textContent = "";
+        resultado.style.backgroundColor =
+        "transparent";
+        listaOpcoes.innerHTML = "";
+        const p = perguntas[perguntaAtual];
+        textoPergunta.textContent = p.pergunta;
+        p.opcoes.forEach((opcao, indice) => {
+            const botao =
+            document.createElement("button");
+            botao.classList.add("opcao");
+            botao.textContent = opcao;
+            botao.onclick = () => 
+                verificarResposta(indice);
+            listaOpcoes.appendChild(botao);
+        });
+    }
+    //Verifica se a resposta está correta
+    function verificarResposta(escolhida) {
+        const opcoes =
+        document.querySelectorAll(".opcao");
+        const correta = 
+        perguntas[perguntaAtual].correta;
+        //Desativa os botões após a escolha
+        opcoes.forEach(botao => botao.disabled = 
+            true);
+            //Marca cores
+            if (escolhida === correta) {
+                opcoes[escolhida].classList.add("correta")
+                resultado.textContent = "✅ Resposta correta!";
+                resultado.style.color = "#2ecc71"
+                pontuacao++;
+            } else {
+                opcoes[escolhida].classList.add("errada");
+                opcoes[correta].classList.add("correta");
+                resultado.textContent = "❌ Resposta errada!";
+                resultado.style.color = "#e74c3c";
+            }
+            //Próxima pergunta ou resultado final
+            setTimeout(() => {
+                perguntaAtual++;
+                if(perguntaAtual < perguntas.length) {
+                    carregarPergunta();
+                } else {
+                    mostrarResultadoFinal();
+                }
+            }, 1800);
+        }
+    //Mostra a pontuação final
+    function mostrarResultadoFinal() {
+        textoPergunta.textContent = "Quiz finalizado!";
+        listaOpcoes.innerHTML = "";
+        resultado.textContent = `Você acertou $ {pontuacao} de $ {perguntas.length} perguntas!`;
+
+        resultado.style.backgroundColor = "#1e2942";
+        resultado.style.color = "#ffffff";
+        botaoReiniciar.style.display = "inline-block";
+    }
+    //Reinicia o jogo
+    botaoReiniciar.onclick = () => {
+        perguntaAtual = 0;
+        pontuacao = 0;
+        botaoReiniciar.style.display = "none";
+        carregarPergunta();
+    }
+    //Inicia o jogo quando carregar a pagina
+    window.addEventListener("load",
+        carregarPergunta);
+    </script>
+
+
+    </body>
+</html>
